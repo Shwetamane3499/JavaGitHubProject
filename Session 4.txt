@@ -1,0 +1,102 @@
+
+Methods in Java
+
+1.Built in methods-->println(), nextInt(),Math.sqrt(),length(),Array.sort()
+2.User defined methods---a)instance method  b)static methods
+
+
+1.Built in methods/predefined methods:
+
+println();
+System.exit();
+nextInt();
+length();
+
+
+2.Userdefined methods:
+Methods written by user are called userdefined methods
+
+a)Instance methods:
+These methods act upon the instance variable.To call the instance method,
+object is needed.These methods also have the access to static variables.
+
+syntax :  public int sum(int a,int b)
+
+public: access modifiers
+int: return type
+sum: name of method
+(int a,int b):  parameters
+
+-Method names always start with small letters, if want to add more than words write in camelcase
+Ex..
+sumOfNum();
+sum();
+findEvenOdd();
+
+-instance methods are called using object name
+obj.methodName();
+
+
+------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Ex. class Student
+     {
+	   int rollnum;
+                  String name;
+                  
+	   public void printStudent()
+                       {
+		   Sysout(rollnum);
+                                Sysout(name);	
+                       }
+               public static void main(String args[ ])
+	  {
+	      Student s1=new Student();
+                     s1.printStudent();
+
+	}
+    }
+
+Ex:1.Ex:Create Student class and  write initStudent() and printStudent() and create two object and invoke methods
+
+
+
+------------------------------------------------------------------------------------------------------------------------------------------------
+
+b) Static method:
+* A static method belongs to the class rather than the object of a class.
+* A static method can be invoked without the need for creating an instance(object) of a class.
+* A static method can access static data members only and can change the value of it.
+* A instance method can have access to static variable but static method can'nt.
+*we use class name to access static data members(static variables,static method)
+*Static method is used to perform some operation on static data(variables)/utility methods.
+*static variables allocates memory only once when class is loaded in memory
+*static data members allocates space in class/static/method area.
+*static data members(static variables,static methods )are shared by all objects of class where 
+static data members are defined
+
+*Advantages of static variables
+--static variables are memory efficient(saves memory),it allocates space for common properties
+ only once in method/static area.
+
+*Application:
+--flight ticket counter,total num of seats in flight are static, user will see only updated available seats
+-use of static count variable to count num of emplyees in company
+
+Demo Create class Employee with static variable companyName , eid,ename,sal and 
+write static  method setCompanyNm()
+
+LAB 2:
+1.Using scanner class accept string from user like "sun","Mon","Tue"  and print appropriate day for accepted string like 
+for "Sun"  print msg "Its sunday" like wise.
+2.Create Mydate class with dd,mm,yy instance variable and initMydate() and printMydate() instance method 
+create two object and call methods
+3.Ex.Create class Employee with initEmp() and displayEmp() methods create two objects and invoke all methods.
+4.Create class Student with name,rollnum,marks and initStudent and printStudent methods and static variable 
+college name and static method setCollegeName.Create two objects and invoke all methods.
+
+
+
+
+
+
